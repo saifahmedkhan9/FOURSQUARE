@@ -111,7 +111,7 @@ public class MainActivity extends ListActivity{
         String val=extras.getString("val");
 
         System.out.println("Val is "+val);
-        url="https://api.foursquare.com/v2/venues/search?client_id=HAXZM0430BCMPWQD3THLWO5WALGAY2R33JAVSK4L4CBHVZZO&client_secret=IEJDOOROLBGFU3NK3BYETCJH2GEV1NYVICED20ZWEHWUXA50&v=20151106+&ll=40.7463956%2C-73.9852992&query="+val+"";
+        url="https://api.foursquare.com/v2/venues/search?client_id=yourclientid&client_secret=yoursecretid&v=20151106+&ll=latitude%2Clongitude&query="+val+"";
         try {
             new GetContacts().execute();
         }
